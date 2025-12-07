@@ -175,8 +175,8 @@ To replicate this project locally, ensure you have the required dependencies.
 1.  **Clone the repository:**
 
     ```
-    git clone https://github.com/YOUR_USERNAME/shakespeare-text-gen.git
-    cd shakespeare-text-gen
+    git clone https://github.com/JashanMann87/Deep-Learning-Project.git
+    cd Deep-Learning-Project
     ```
 
 2.  **Install dependencies:**
