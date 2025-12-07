@@ -207,12 +207,13 @@ Text generation uses a loop where the predicted character is fed back into the m
 
 The primary metric for evaluation was **Perplexity**, defined as the exponent of the loss ($e^{loss}$). A lower perplexity indicates the model is less "confused" by the data.
 
-  * **Final Loss:** \~1.32
-  * **Final Perplexity:** \~3.74
+  * **Final Loss:** \~1.1364
+  * **Final Perplexity:** \~3.1157
 
 The graphs below illustrate the training progress. The loss curve demonstrates a standard logarithmic decay, plateauing around epoch 15, indicating that the model has effectively learned the statistical properties of the dataset.
 
-*(Refer to `training_report_graphs.png` in the repository)*
+<img width="1489" height="590" alt="image" src="https://github.com/user-attachments/assets/e45325cd-3f4b-4dc4-8887-6ba0416c6c6e" />
+
 
 ### 9.2 Qualitative Analysis
 
@@ -223,7 +224,8 @@ The generated text exhibits strong structural coherence.
   * **Limitations:** While the grammar is largely correct, the semantic meaning is occasionally nonsensical ("The king hath washed the stone"), a common limitation of character-level models that lack world knowledge.
 
 **Sample Output (Seed: "ROMEO: "):**
-*(Refer to `output.png` in the repository)*
+<img width="605" height="555" alt="image" src="https://github.com/user-attachments/assets/92a85eb5-7f8a-49dc-b4fa-da2b7f791265" />
+
 
 -----
 
@@ -246,6 +248,7 @@ While the GRU model performs admirably, future iterations could improve upon thi
 3.  **Bengio, Y., Ducharme, R., & Vincent, P. (2003).** A neural probabilistic language model. *Journal of Machine Learning Research*, 3, 1137-1155.
 
 **RNNs, LSTMs, and GRUs**
+
 4\.  **Hochreiter, S., & Schmidhuber, J. (1997).** Long Short-Term Memory. *Neural Computation*, 9(8), 1735-1780.
 5\.  **Cho, K., van Merriënboer, B., Gulcehre, C., Bahdanau, D., Bougares, F., Schwenk, H., & Bengio, Y. (2014).** Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation. *arXiv preprint arXiv:1406.1078*.
 6\.  **Chung, J., Gulcehre, C., Cho, K., & Bengio, Y. (2014).** Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling. *arXiv preprint arXiv:1412.3555*.
@@ -253,17 +256,20 @@ While the GRU model performs admirably, future iterations could improve upon thi
 8\.  **Graves, A. (2013).** Generating Sequences With Recurrent Neural Networks. *arXiv preprint arXiv:1308.0850*.
 
 **Character-Level Modeling & NLP**
+
 9\.  **Karpathy, A. (2015).** The Unreasonable Effectiveness of Recurrent Neural Networks. *Andrej Karpathy Blog*.
 10\. **Sutskever, I., Martens, J., & Hinton, G. E. (2011).** Generating Text with Recurrent Neural Networks. *Proceedings of the 28th International Conference on Machine Learning (ICML-11)*, 1017-1024.
 11\. **Mikolov, T., Karafiat, M., Burget, L., Cernocky, J., & Khudanpur, S. (2010).** Recurrent neural network based language model. *Interspeech*, 2, 1045-1048.
 12\. **Brown, P. F., Desouza, P. V., Mercer, R. L., Pietra, V. J. D., & Lai, J. C. (1992).** Class-based n-gram models of natural language. *Computational Linguistics*, 18(4), 467-479.
 
 **Optimization & Regularization**
+
 13\. **Kingma, D. P., & Ba, J. (2014).** Adam: A Method for Stochastic Optimization. *arXiv preprint arXiv:1412.6980*.
 14\. **Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I., & Salakhutdinov, R. (2014).** Dropout: A simple way to prevent neural networks from overfitting. *Journal of Machine Learning Research*, 15(1), 1929-1958.
 15\. **Glorot, X., & Bengio, Y. (2010).** Understanding the difficulty of training deep feedforward neural networks. *Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics*, 249-256.
 
 **Frameworks & Tools**
+
 16\. **Abadi, M., et al. (2015).** TensorFlow: Large-Scale Machine Learning on Heterogeneous Systems. *Software available from tensorflow.org*.
 17\. **Chollet, F., et al. (2015).** Keras. *GitHub repository*. [https://github.com/fchollet/keras](https://github.com/fchollet/keras).
 18\. **Project Gutenberg.** (n.d.). The Complete Works of William Shakespeare. Retrieved from [https://www.gutenberg.org/](https://www.gutenberg.org/)
