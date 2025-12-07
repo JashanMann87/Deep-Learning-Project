@@ -2,9 +2,8 @@
 
 ## Authors
 
-  * **Lead Researcher & Developer:** [Your Name]
-  * **Mentors/Advisors:** [Name if applicable]
-  * **Institution:** [Your University/Organization]
+  * **Jashan Mann** [102215176]
+  * **Manan Malhotra** [102215352]
 
 -----
 
